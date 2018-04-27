@@ -12,14 +12,14 @@
 int main (void)
 
 {
-    int numero_binario[100], i=0, j=0, y;
+    int numero_binario[100], i=0, j=0, num;
     printf("inserte un numero que desea convertir a binario:\n");
-    scanf("%d",&y);
+    scanf("%d",&num);
 
     for (i=100; i>0; i--)
     {
-      numero_binario[i]=y%2;
-      y=y/2;
+      numero_binario[i]=num%2;
+      num=num/2;
     }
       for (i=1; i<=100; i++)
         {
